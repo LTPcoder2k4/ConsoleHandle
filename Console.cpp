@@ -1,7 +1,10 @@
 #include "Console.h"
 
 void Console::Clear(){
+    //Unix user
     std::cout << "\033[2J\033[1;1H";
+    //Window user
+    system("cls");
 }
 
 void Console::SetWindowSize(int w, int h) {
