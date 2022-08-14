@@ -1,5 +1,8 @@
 #include "Console.h"
-#include <windows.h>
+
+void Console::Clear(){
+    std::cout << "\033[2J\033[1;1H";
+}
 
 void Console::SetWindowSize(int w, int h) {
     SHORT width = w;
